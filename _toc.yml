@@ -17,5 +17,6 @@ chapters:
       - file: handling/processing/README.md
       - file: handling/modelling.md
       - file: handling/visualizing.md
+  - file: orchestrating/README.md
   - file: dataops/README.md
   - file: security/README.md
