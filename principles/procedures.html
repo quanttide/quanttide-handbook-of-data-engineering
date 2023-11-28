@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>数据源 &#8212; 量潮数据工程手册</title>
+    <title>流程 &#8212; 量潮数据工程手册</title>
   
   
   
@@ -62,11 +62,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'sources/README';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'principles/procedures';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="元数据管理" href="metadata.html" />
-    <link rel="prev" title="数据应用" href="../deliveries/applications.html" />
+    <link rel="next" title="数据交付物" href="../deliveries/README.html" />
+    <link rel="prev" title="原则" href="README.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -163,8 +163,8 @@ const thebe_selector_output = ".output, .cell_output"
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../principles/README.html">原则</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="../principles/procedures.html">流程</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="README.html">原则</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">流程</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../deliveries/README.html">数据交付物</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -172,8 +172,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l2"><a class="reference internal" href="../deliveries/applications.html">数据应用</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">数据源</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
-<li class="toctree-l2"><a class="reference internal" href="metadata.html">元数据管理</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../sources/README.html">数据源</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../sources/metadata.html">元数据管理</a></li>
 </ul>
 </li>
 <li class="toctree-l1 has-children"><a class="reference internal" href="../handling/README.html">数据处理</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
@@ -240,7 +240,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="../_sources/sources/README.md" target="_blank"
+      <li><a href="../_sources/principles/procedures.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -311,7 +311,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -322,11 +324,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>数据源</h1>
+    <h1>流程</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">明确交付目标</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">梳理主线流程</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">设计调度逻辑</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">制定研发流程</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -337,9 +350,24 @@ document.write(`
                 <article class="bd-article" role="main">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>数据源<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
-<div class="toctree-wrapper compound">
-</div>
+<h1>流程<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<p>本文提供一个指导性的流程框架，帮助团队在项目的不同阶段明确方向、协同工作并最终交付高质量的数据解决方案。在实际项目中，团队可根据具体需求和实践进行调整。</p>
+<section id="id2">
+<h2>明确交付目标<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<p>明确交付给哪些利益相关方以及将提供什么样的数据交付物。与利益相关方一起约定交付的形式、渠道等细节，以确保数据以适当的格式、通过适当的渠道，被正确、安全地传递给目标受众。</p>
+</section>
+<section id="id3">
+<h2>梳理主线流程<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<p>梳理数据采集、预处理、建模到可视化的关键步骤，确保整个团队对数据流的理解达成一致的关键步骤。</p>
+</section>
+<section id="id4">
+<h2>设计调度逻辑<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+<p>制定任务的触发条件、分发逻辑以及整体任务管理，确保数据工程系统的有效性和可靠性。</p>
+</section>
+<section id="id5">
+<h2>制定研发流程<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<p>制定各个环节的责任分配、工作流程的定义以及在面对问题时的调整策略，确保项目的进展和质量。</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -355,7 +383,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./sources"
+            path: "./principles"
         },
         predefinedOutput: true
     }
@@ -373,20 +401,20 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../deliveries/applications.html"
+       href="README.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">数据应用</p>
+        <p class="prev-next-title">原则</p>
       </div>
     </a>
     <a class="right-next"
-       href="metadata.html"
+       href="../deliveries/README.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">元数据管理</p>
+        <p class="prev-next-title">数据交付物</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -396,6 +424,23 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">明确交付目标</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">梳理主线流程</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">设计调度逻辑</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">制定研发流程</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
