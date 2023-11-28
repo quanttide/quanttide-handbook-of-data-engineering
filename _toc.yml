@@ -4,13 +4,12 @@ chapters:
   - file: principles/README.md
     sections:
       - file: principles/procedures.md
-  - file: deliveries/README.md
+  - file: delivering/README.md
     sections:
-      - file: deliveries/datasets.md
-      - file: deliveries/applications.md
-  - file: sources/README.md
-    sections:
-      - file: sources/metadata.md
+      - file: delivering/deliveries/README.md
+        sections:
+          - file: delivering/deliveries/datasets.md
+          - file: delivering/deliveries/applications.md
   - file: handling/README.md
     sections: 
       - file: handling/collecting/README.md
