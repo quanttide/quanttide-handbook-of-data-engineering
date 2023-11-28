@@ -1,6 +1,9 @@
 format: jb-book
 root: index.md
 chapters:
+  - file: principles/README.md
+    sections:
+      - file: principles/procedures.md
   - file: deliveries/README.md
     sections:
       - file: deliveries/datasets.md
