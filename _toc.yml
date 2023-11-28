@@ -2,5 +2,10 @@ format: jb-book
 root: index.md
 chapters:
   - file: handling/README.md
+    sections: 
+      - file: handling/collecting/README.md
+      - file: handling/processing/README.md
+      - file: handling/modelling.md
+      - file: handling/visualizing.md
   - file: dataops/README.md
   - file: security/README.md
