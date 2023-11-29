@@ -4,6 +4,7 @@ chapters:
   - file: principles/README.md
     sections:
       - file: principles/procedures.md
+      - file: principles/lifecycles.md
   - file: delivering/README.md
     sections:
       - file: delivering/deliveries/README.md
@@ -14,6 +15,9 @@ chapters:
     sections: 
       - file: handling/collecting/README.md
       - file: handling/processing/README.md
+      - file: handling/storing/README.md
+        sections: 
+          - file: handling/storing/sources.md
       - file: handling/modelling.md
       - file: handling/visualizing.md
   - file: orchestrating/README.md
