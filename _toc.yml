@@ -56,3 +56,7 @@ chapters:
       - file: research/monitor.md
       - file: research/maintain.md
   - file: security/README.md
+  - file: applications/README.md
+    sections:
+      - file: applications/ai-training.md
+      - file: applications/govern-data-analyse.md
