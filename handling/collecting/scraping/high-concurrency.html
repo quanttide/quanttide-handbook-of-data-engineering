@@ -241,6 +241,11 @@
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../security/README.html">数据安全</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../applications/README.html">行业应用</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../applications/ai-training.html">人工智能算法训练</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../applications/govern-data-analyse.html">政务公开数据分析</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -393,6 +398,12 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>高并发<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<ol class="arabic simple">
+<li><p>数据库增加一个数字状态字段，记录当前爬取状态，未爬取、爬取中和已爬取各使用不同的值（1，-1，0），也可以记录失败了几次（失败则数字加1），在爬取端选取爬取目标时，只筛选未爬取的，或者失败次数未达上限的</p></li>
+<li><p>Redis等速度快的数据库可以暴力解决，它能及时反映当前爬取状态</p></li>
+<li><p>通过人为设计规则保证目标选取不冲突</p></li>
+<li><p>消息队列，类似调度器，每一个爬取端从消息队列中获取自己需要爬取的链接，同时消息队列设置每条消息只能被消费一次</p></li>
+</ol>
 </section>
 
     <script type="text/x-thebe-config">

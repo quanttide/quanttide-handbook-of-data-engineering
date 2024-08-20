@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>构建 &#8212; 量潮数据工程手册</title>
+    <title>政务公开数据分析 &#8212; 量潮数据工程手册</title>
   
   
   
@@ -57,11 +57,10 @@
     <script async="async" src="../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'research/build';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'applications/govern-data-analyse';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="测试" href="test.html" />
-    <link rel="prev" title="开发" href="develop.html" />
+    <link rel="prev" title="人工智能算法训练" href="ai-training.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -229,21 +228,21 @@
 <li class="toctree-l2"><a class="reference internal" href="../governance/infrastructure.html">基础设施</a></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="README.html">研发流程管理</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="plan.html">计划</a></li>
-<li class="toctree-l2"><a class="reference internal" href="develop.html">开发</a></li>
-<li class="toctree-l2 current active"><a class="current reference internal" href="#">构建</a></li>
-<li class="toctree-l2"><a class="reference internal" href="test.html">测试</a></li>
-<li class="toctree-l2"><a class="reference internal" href="release.html">发布</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deploy.html">部署</a></li>
-<li class="toctree-l2"><a class="reference internal" href="monitor.html">监控</a></li>
-<li class="toctree-l2"><a class="reference internal" href="maintain.html">运维</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../research/README.html">研发流程管理</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../research/plan.html">计划</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../research/develop.html">开发</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../research/build.html">构建</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../research/test.html">测试</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../research/release.html">发布</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../research/deploy.html">部署</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../research/monitor.html">监控</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../research/maintain.html">运维</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../security/README.html">数据安全</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="../applications/README.html">行业应用</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="../applications/ai-training.html">人工智能算法训练</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../applications/govern-data-analyse.html">政务公开数据分析</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="README.html">行业应用</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ai-training.html">人工智能算法训练</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">政务公开数据分析</a></li>
 </ul>
 </details></li>
 </ul>
@@ -300,7 +299,7 @@
       
       
       
-      <li><a href="../_sources/research/build.md" target="_blank"
+      <li><a href="../_sources/applications/govern-data-analyse.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -371,7 +370,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -382,11 +383,22 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>构建</h1>
+    <h1>政务公开数据分析</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">数据源</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">司法公开数据源</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -397,7 +409,42 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>构建<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<h1>政务公开数据分析<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>在中国，政务公开数据通常遵循《中华人民共和国政府信息公开条例》等相关法律法规，旨在提高政府工作的透明度，促进政府职能转变，增强政府公信力。</p>
+<p>政务公开数据通常包括但不限于政府公告、政策法规、统计数据、公共服务信息等。这些数据的获取、处理和利用对于促进政府与公众的互动、支持学术研究、推动社会发展和创新具有重要意义。</p>
+<p>政府有各种规范文件规定格式、具备一定程度的标准化，这为逻辑通用提供了可能性。但是还是一个萝卜一个坑，这样就需要通用爬虫和智能化的清洗来解决，而非针对特定网站的爬虫。</p>
+<p>步骤：</p>
+<ol class="arabic simple">
+<li><p><strong>数据获取</strong>：使用通用爬虫技术定期抓取公开的数据源。这些数据源可能包括各级政府网站、数据开放平台等。</p></li>
+<li><p><strong>数据清洗</strong>：由于公开的数据格式不统一，可能存在大量的噪声和错误，因此需要通过智能化手段进行数据清洗。这可能包括去除重复数据、纠正错误、统一数据格式等。</p></li>
+<li><p><strong>数据存储</strong>：将清洗后的数据存储在数据库或数据仓库中，以便于后续的分析和应用。</p></li>
+<li><p><strong>数据分析</strong>：利用数据分析工具和技术，对政务数据进行深入分析，挖掘数据中的有用信息和模式。</p></li>
+</ol>
+<p>难点：</p>
+<ol class="arabic simple">
+<li><p>数据收集与整合：政务数据通常来自不同的政府部门和信息系统，数据工程师需要设计有效的数据收集和整合方案，确保数据的准确性和一致性。</p></li>
+<li><p>数据清洗与处理：政府数据可能包含错误、重复或缺失的信息，数据工程师需要运用数据清洗和处理技术，提高数据的质量和可用性。</p></li>
+</ol>
+<p>实现：</p>
+<p>根据设定目标自动设计和自动开发，以获取和定期更新数据。</p>
+<section id="id2">
+<h2>数据源<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<section id="id3">
+<h3>司法公开数据源<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<p>判决书：裁判文书网</p>
+<p>治安处罚数据：</p>
+<ul class="simple">
+<li><p>上海市公安局
+<a class="reference external" href="https://gaj.sh.gov.cn/shga/wzXxfbZfgkml/toXzcf">https://gaj.sh.gov.cn/shga/wzXxfbZfgkml/toXzcf</a></p></li>
+<li><p>宝山区公安局
+<a class="reference external" href="https://gaj.sh.gov.cn/bsga/xzcf">https://gaj.sh.gov.cn/bsga/xzcf</a></p></li>
+<li><p>浙江：<a class="reference external" href="https://www.zjzwfw.gov.cn/zjservice-fe/#/Punish?webId=6">https://www.zjzwfw.gov.cn/zjservice-fe/#/Punish?webId=6</a></p></li>
+<li><p>江苏：有入口，显示在维护。</p></li>
+</ul>
+<p>相关说明：<a class="reference external" href="https://www.zhihu.com/question/612388439/answer/3205199785">https://www.zhihu.com/question/612388439/answer/3205199785</a>
+也就是说可能数据不全。</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -413,7 +460,7 @@ document.write(`
         },
         kernelOptions: {
             name: "python3",
-            path: "./research"
+            path: "./applications"
         },
         predefinedOutput: true
     }
@@ -431,22 +478,13 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="develop.html"
+       href="ai-training.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">开发</p>
+        <p class="prev-next-title">人工智能算法训练</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="test.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">测试</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -454,6 +492,24 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">数据源</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">司法公开数据源</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

@@ -241,6 +241,11 @@
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../../../security/README.html">数据安全</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../../applications/README.html">行业应用</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../../applications/ai-training.html">人工智能算法训练</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../applications/govern-data-analyse.html">政务公开数据分析</a></li>
+</ul>
+</details></li>
 </ul>
 
     </div>
@@ -393,6 +398,14 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
 <h1>复杂爬虫<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<p>“复杂爬虫”指需要通过观察网站行为和分析网页源代码理解网站的运行逻辑并在爬虫中模拟的爬虫。</p>
+<p>研发要点：查看调用栈找到相关源码，使用AI辅助（推荐通义灵码）分析网页开发者写的源码（分为未混淆和混淆两种情况，知乎混淆过，混淆过的代码，分析十分困难，如何使用AI辅助是个问题）</p>
+<p>混淆源码网页爬虫可能的技巧：</p>
+<ol class="arabic simple">
+<li><p>尽可能完整模拟请求格式（如果只有这个就可以完成也是简单爬虫）</p></li>
+<li><p>Cookie有特定参数，主要是cookie，cookie可能有其他来源控制，需要全局分析代码，或者是自定义参数，也是类似情况</p></li>
+</ol>
+<p>复杂爬虫的定义，主要是就是为了区分哪些爬虫属于相对比较难的爬虫，然后这类爬虫直接体现在我们的项目周期和报价上的特点，就是项目周期通常情况下会长很长一段时间，然后报价也至少要翻两倍以上。</p>
 </section>
 
     <script type="text/x-thebe-config">
