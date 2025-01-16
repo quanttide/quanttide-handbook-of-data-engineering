@@ -1,62 +1,52 @@
 format: jb-book
 root: index.md
-chapters:
-  - file: principles/README.md
-    sections:
-      - file: principles/procedures.md
-      - file: principles/lifecycles.md
-  - file: delivering/README.md
-    sections:
-      - file: delivering/deliveries/README.md
+parts:
+  - caption: 数据处理
+    chapters:
+      - file: handling/annotating/README.md
         sections:
-          - file: delivering/deliveries/datasets/README.md
+          - file: handling/annotating/text_annotating/README.md
             sections:
-              - file: delivering/deliveries/datasets/formats.md
-              - file: delivering/deliveries/datasets/procedures.md
-          - file: delivering/deliveries/applications/README.md
-            sections:
-              - file: delivering/deliveries/applications/formats.md
-              - file: delivering/deliveries/applications/procedures.md
-  - file: handling/README.md
-    sections: 
-      - file: handling/collecting/README.md
+              - file: handling/annotating/text_annotating/text_labeling.md
+              - file: handling/annotating/text_annotating/text_tagging.md
+              - file: handling/annotating/text_annotating/text_labelling_vs_tagging.md
+  - caption: 数据运营
+    chapters:
+      - file: dataops/README.md
+  - caption: 未分类
+    chapters:
+      - file: principles/README.md
         sections:
-          - file: handling/collecting/scraping/README.md
-            sections:
-              - file: handling/collecting/scraping/easy.md
-              - file: handling/collecting/scraping/complicated.md
-              - file: handling/collecting/scraping/scheduling.md
-              - file: handling/collecting/scraping/deployment.md
-              - file: handling/collecting/scraping/anti-scraping.md
-              - file: handling/collecting/scraping/high-concurrency.md
-              - file: handling/collecting/scraping/ai-auto.md
-              - file: handling/collecting/scraping/ai-generating.md
-      - file: handling/processing/README.md
+          - file: principles/procedures.md
+          - file: principles/lifecycles.md
+      - file: delivering/README.md
         sections:
-          - file: handling/processing/data-marking.md
-          - file: handling/processing/ai-marking.md
-          - file: handling/processing/data-transforming.md
-      - file: handling/storing/README.md
+          - file: delivering/deliveries/README.md
+            sections:
+              - file: delivering/deliveries/datasets/README.md
+                sections:
+                  - file: delivering/deliveries/datasets/formats.md
+                  - file: delivering/deliveries/datasets/procedures.md
+              - file: delivering/deliveries/applications/README.md
+                sections:
+                  - file: delivering/deliveries/applications/formats.md
+                  - file: delivering/deliveries/applications/procedures.md
+      - file: handling/README.md
         sections: 
-          - file: handling/storing/sources.md
-      - file: handling/modelling.md
-      - file: handling/visualizing.md
-  - file: governance/README.md
-    sections:
-      - file: governance/orchestrating.md
-      - file: governance/infrastructure.md
-  - file: research/README.md
-    sections:
-      - file: research/plan.md
-      - file: research/develop.md
-      - file: research/build.md
-      - file: research/test.md
-      - file: research/release.md
-      - file: research/deploy.md
-      - file: research/monitor.md
-      - file: research/maintain.md
-  - file: security/README.md
-  - file: applications/README.md
-    sections:
-      - file: applications/ai-training.md
-      - file: applications/govern-data-analyse.md
+          - file: handling/collecting/README.md
+            sections:
+              - file: handling/collecting/scraping/README.md
+                sections:
+                  - file: handling/collecting/scraping/easy.md
+                  - file: handling/collecting/scraping/complicated.md
+                  - file: handling/collecting/scraping/scheduling.md
+                  - file: handling/collecting/scraping/deployment.md
+                  - file: handling/collecting/scraping/anti-scraping.md
+                  - file: handling/collecting/scraping/high-concurrency.md
+                  - file: handling/collecting/scraping/ai-auto.md
+                  - file: handling/collecting/scraping/ai-generating.md
+          - file: handling/processing/README.md
+            sections:
+              - file: handling/processing/data-marking.md
+              - file: handling/processing/ai-marking.md
+              - file: handling/processing/data-transforming.md
