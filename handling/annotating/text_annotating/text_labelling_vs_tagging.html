@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>反爬 &#8212; 量潮数据工程手册</title>
+    <title>文本分类 vs 文本标签 &#8212; 量潮数据工程手册</title>
   
   
   
@@ -60,11 +60,11 @@
     <script async="async" src="../../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'handling/collecting/scraping/anti-scraping';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'handling/annotating/text_annotating/text_labelling_vs_tagging';</script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
-    <link rel="next" title="高并发" href="high-concurrency.html" />
-    <link rel="prev" title="部署" href="deployment.html" />
+    <link rel="next" title="数据运营简介" href="../../../dataops/README.html" />
+    <link rel="prev" title="文本标签标注" href="text_tagging.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -163,12 +163,12 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">数据处理</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../../annotating/README.html">数据标注</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../../annotating/text_annotating/README.html">文本标注</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../../annotating/text_annotating/text_labeling.html">文本分类标注</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../annotating/text_annotating/text_tagging.html">文本标签标注</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../../annotating/text_annotating/text_labelling_vs_tagging.html">文本分类 vs 文本标签</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../README.html">数据标注</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="README.html">文本标注</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="text_labeling.html">文本分类标注</a></li>
+<li class="toctree-l3"><a class="reference internal" href="text_tagging.html">文本标签标注</a></li>
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">文本分类 vs 文本标签</a></li>
 </ul>
 </details></li>
 </ul>
@@ -179,7 +179,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../../dataops/README.html">数据运营简介</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">未分类</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../../principles/README.html">原则</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../../principles/procedures.html">流程</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../../principles/lifecycles.html">数据生命周期</a></li>
@@ -201,17 +201,17 @@
 </details></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../../README.html">数据处理</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l2 current active has-children"><a class="reference internal" href="../README.html">数据采集</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l3 current active has-children"><a class="reference internal" href="README.html">网页爬虫</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="easy.html">简单爬虫</a></li>
-<li class="toctree-l4"><a class="reference internal" href="complicated.html">复杂爬虫</a></li>
-<li class="toctree-l4"><a class="reference internal" href="scheduling.html">编排和调度</a></li>
-<li class="toctree-l4"><a class="reference internal" href="deployment.html">部署</a></li>
-<li class="toctree-l4 current active"><a class="current reference internal" href="#">反爬</a></li>
-<li class="toctree-l4"><a class="reference internal" href="high-concurrency.html">高并发</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ai-auto.html">AI自动爬虫</a></li>
-<li class="toctree-l4"><a class="reference internal" href="ai-generating.html">AI生成爬虫代码</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../README.html">数据处理</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../../collecting/README.html">数据采集</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3 has-children"><a class="reference internal" href="../../collecting/scraping/README.html">网页爬虫</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l4"><a class="reference internal" href="../../collecting/scraping/easy.html">简单爬虫</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../collecting/scraping/complicated.html">复杂爬虫</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../collecting/scraping/scheduling.html">编排和调度</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../collecting/scraping/deployment.html">部署</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../collecting/scraping/anti-scraping.html">反爬</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../collecting/scraping/high-concurrency.html">高并发</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../collecting/scraping/ai-auto.html">AI自动爬虫</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../../collecting/scraping/ai-generating.html">AI生成爬虫代码</a></li>
 </ul>
 </details></li>
 </ul>
@@ -283,7 +283,7 @@
       
       
       
-      <li><a href="../../../_sources/handling/collecting/scraping/anti-scraping.md" target="_blank"
+      <li><a href="../../../_sources/handling/annotating/text_annotating/text_labelling_vs_tagging.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -346,7 +346,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -357,11 +359,22 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>反爬</h1>
+    <h1>文本分类 vs 文本标签</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>1. 定义与使用场景</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>2. 结构性</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><strong>3. 单一性 vs. 多样性</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><strong>4. 例子总结</strong></a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -371,23 +384,108 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>反爬<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<ol class="arabic simple">
-<li><p>上云可以以多种方法实现多IP，触发验证的概率比本地低</p></li>
-<li><p>有可能有些网站会拉黑云服务厂商的IP段，或者做为高风险IP加严反爬限制</p></li>
-<li><p>如果网站要求登陆后才能访问，那么换IP难直接解决反爬问题</p></li>
-<li><p>使用第三方服务可以解决验证码和滑块等问题</p></li>
-<li><p>函数（FaaS，Lambda）、容器、虚拟机是3种可用的云产品。</p>
-<ol class="arabic simple">
-<li><p>函数可以做到更小的规格，来降低成本，具体需要上AWS进行对比。</p></li>
-<li><p>函数可以很方便的启动较多的数量，虚拟机正常需要手动进行启停，auto scaling应该可以批量启动虚拟机</p></li>
-<li><p>函数运行结束后会有一段待回收的时期，回收前再次调用会复用之前的实例导致复用了之前的IP，但是在同时运行的就是不同的IP；虚拟机每一个实例是不同的IP，销毁后再次启动新的虚拟机理论上IP重复概率比较小</p></li>
-<li><p>虚拟机需要配置环境，函数预先把依赖包下载好，作为层一起运行，相当于直接附到代码包里</p></li>
-</ol>
+  <section class="tex2jax_ignore mathjax_ignore" id="vs">
+<h1>文本分类 vs 文本标签<a class="headerlink" href="#vs" title="Link to this heading">#</a></h1>
+<ul class="simple">
+<li><p>如果需要清晰的、唯一的分类（如监督学习），通常使用 <strong>Label</strong>。</p></li>
+<li><p>如果需要描述性、灵活的标记（如信息管理或自由分类），通常使用 <strong>Tag</strong>。</p></li>
+</ul>
+<section id="id1">
+<h2><strong>1. 定义与使用场景</strong><a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Label</strong>：</p>
+<ul>
+<li><p><strong>定义</strong>：表示一个明确的分类或类别，通常是结构化且具有唯一性。</p></li>
+<li><p><strong>使用场景</strong>：常用于监督学习任务，如文本分类、图像分类等，通常每个样本只有一个或一组固定的类别标签。</p></li>
+<li><p><strong>例子</strong>：</p>
+<ul>
+<li><p>文本：“这部电影很棒！”</p>
+<ul>
+<li><p>Label: “正面评价”</p></li>
+</ul>
 </li>
-<li><p>多输出运行日志，特别是关键步骤，然后由 人工定期检查 或 平台（自己做或第三方提供）自动读取日志 并提醒使用者。日志要么输出到对象存储/日志服务里，要么虚拟机往文件输出，函数直接打印，让其自动记录。</p></li>
-</ol>
+<li><p>文本：“这是一条垃圾短信。”</p>
+<ul>
+<li><p>Label: “垃圾邮件”</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Tag</strong>：</p>
+<ul>
+<li><p><strong>定义</strong>：表示一种自由形式的标记，可以是多个描述性关键词，通常不具备唯一性。</p></li>
+<li><p><strong>使用场景</strong>：用于信息管理、搜索引擎优化或更灵活的多标签场景，如标签云、内容分类等。</p></li>
+<li><p><strong>例子</strong>：</p>
+<ul>
+<li><p>文本：“Python是一个流行的编程语言。”</p>
+<ul>
+<li><p>Tags: [“编程”, “Python”, “技术”]</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id2">
+<h2><strong>2. 结构性</strong><a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Label</strong>：通常是结构化的、预定义的集合，比如类别层级。</p>
+<ul>
+<li><p>示例：分类中只有“正面评价”、“负面评价”、“中性”三类。</p></li>
+</ul>
+</li>
+<li><p><strong>Tag</strong>：通常是非结构化的，可能没有预定义的集合，用户可以动态创建。</p>
+<ul>
+<li><p>示例：一篇博客可以包含任意用户定义的标签，如“AI”、“机器学习”、“自然语言处理”。</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id3">
+<h2><strong>3. 单一性 vs. 多样性</strong><a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Label</strong>：通常单一，尤其在单标签任务中，一个数据样本通常只有一个标签。</p>
+<ul>
+<li><p>示例：邮件分类中，邮件要么是“垃圾邮件”，要么是“非垃圾邮件”。</p></li>
+</ul>
+</li>
+<li><p><strong>Tag</strong>：通常可以是多个，一个样本可能有多个相关标签。</p>
+<ul>
+<li><p>示例：一篇新闻文章可能有多个标签：“经济”、“市场”、“全球化”。</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="id4">
+<h2><strong>4. 例子总结</strong><a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>概念</strong></p></th>
+<th class="head"><p><strong>Label</strong></p></th>
+<th class="head"><p><strong>Tag</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><strong>目的</strong></p></td>
+<td><p>用于分类模型训练</p></td>
+<td><p>用于灵活的内容组织与搜索</p></td>
+</tr>
+<tr class="row-odd"><td><p><strong>数量</strong></p></td>
+<td><p>一般是单一或固定的</p></td>
+<td><p>可以是多个，自由定义</p></td>
+</tr>
+<tr class="row-even"><td><p><strong>示例</strong></p></td>
+<td><p>“正面评价”, “垃圾邮件”</p></td>
+<td><p>“科技”, “AI”, “Python”, “深度学习”</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -403,7 +501,7 @@
         },
         kernelOptions: {
             name: "python3",
-            path: "./handling/collecting/scraping"
+            path: "./handling/annotating/text_annotating"
         },
         predefinedOutput: true
     }
@@ -421,20 +519,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="deployment.html"
+       href="text_tagging.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">部署</p>
+        <p class="prev-next-title">文本标签标注</p>
       </div>
     </a>
     <a class="right-next"
-       href="high-concurrency.html"
+       href="../../../dataops/README.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">高并发</p>
+        <p class="prev-next-title">数据运营简介</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -444,6 +542,25 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"><strong>1. 定义与使用场景</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2"><strong>2. 结构性</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3"><strong>3. 单一性 vs. 多样性</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4"><strong>4. 例子总结</strong></a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>

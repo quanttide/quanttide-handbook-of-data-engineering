@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>数据预处理 &#8212; 量潮数据工程手册</title>
+    <title>数据标注 &#8212; 量潮数据工程手册</title>
   
   
   
@@ -60,11 +60,11 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'handling/processing/README';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'handling/annotating/README';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="数据标注" href="data-marking.html" />
-    <link rel="prev" title="AI生成爬虫代码" href="../collecting/scraping/ai-generating.html" />
+    <link rel="next" title="文本标注" href="text_annotating/README.html" />
+    <link rel="prev" title="简介" href="../../index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -163,12 +163,12 @@
             </li>
         </ul>
         <p aria-level="2" class="caption" role="heading"><span class="caption-text">数据处理</span></p>
-<ul class="nav bd-sidenav">
-<li class="toctree-l1 has-children"><a class="reference internal" href="../annotating/README.html">数据标注</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2 has-children"><a class="reference internal" href="../annotating/text_annotating/README.html">文本标注</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="../annotating/text_annotating/text_labeling.html">文本分类标注</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../annotating/text_annotating/text_tagging.html">文本标签标注</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../annotating/text_annotating/text_labelling_vs_tagging.html">文本分类 vs 文本标签</a></li>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">数据标注</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2 has-children"><a class="reference internal" href="text_annotating/README.html">文本标注</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="text_annotating/text_labeling.html">文本分类标注</a></li>
+<li class="toctree-l3"><a class="reference internal" href="text_annotating/text_tagging.html">文本标签标注</a></li>
+<li class="toctree-l3"><a class="reference internal" href="text_annotating/text_labelling_vs_tagging.html">文本分类 vs 文本标签</a></li>
 </ul>
 </details></li>
 </ul>
@@ -179,7 +179,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../dataops/README.html">数据运营简介</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">未分类</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1 has-children"><a class="reference internal" href="../../principles/README.html">原则</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="../../principles/procedures.html">流程</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../../principles/lifecycles.html">数据生命周期</a></li>
@@ -201,7 +201,7 @@
 </details></li>
 </ul>
 </details></li>
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="../README.html">数据处理</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../README.html">数据处理</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2 has-children"><a class="reference internal" href="../collecting/README.html">数据采集</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l3 has-children"><a class="reference internal" href="../collecting/scraping/README.html">网页爬虫</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l4"><a class="reference internal" href="../collecting/scraping/easy.html">简单爬虫</a></li>
@@ -216,10 +216,10 @@
 </details></li>
 </ul>
 </details></li>
-<li class="toctree-l2 current active has-children"><a class="current reference internal" href="#">数据预处理</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l3"><a class="reference internal" href="data-marking.html">数据标注</a></li>
-<li class="toctree-l3"><a class="reference internal" href="ai-marking.html">AI数据标注</a></li>
-<li class="toctree-l3"><a class="reference internal" href="data-transforming.html">数据转换</a></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../processing/README.html">数据预处理</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../processing/data-marking.html">数据标注</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../processing/ai-marking.html">AI数据标注</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../processing/data-transforming.html">数据转换</a></li>
 </ul>
 </details></li>
 </ul>
@@ -283,7 +283,7 @@
       
       
       
-      <li><a href="../../_sources/handling/processing/README.md" target="_blank"
+      <li><a href="../../_sources/handling/annotating/README.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -346,7 +346,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -357,11 +359,26 @@
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>数据预处理</h1>
+    <h1>数据标注</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">定义</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">类型</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">分类标注</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">框定标注（目标检测）</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">语义分割标注</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">序列标注</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -372,18 +389,35 @@
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="id1">
-<h1>数据预处理<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
-<p>数据预处理是指对数据进行处理、加工、转换、整合和清理等操作的过程。数据预处理可以在数据收集之后和数据分析之前进行，以确保数据质量和准确性。</p>
-<p>数据预处理的主要目的是将数据规整化和优化，使其适合于特定的分析和应用。</p>
-<p>数据处理中包括以下步骤：</p>
-<ol class="arabic simple">
-<li><p>数据清洗：去除错误、冗余、缺失、重复、异常和无用的数据，以确保数据质量。</p></li>
-<li><p>数据转换：将数据格式、结构等进行转换，方便后续的分析、可视化或存储。</p></li>
-<li><p>数据整合：从多个数据源中整合数据，尤其是对于需要进行跨系统分析的数据。</p></li>
-<li><p>数据归一化：将数据进行标准化操作，以统一不同来源的数据格式和单位，便于后续分析。</p></li>
-<li><p>数据增强：对数据进行补充和扩充，例如添加标签、元数据、关联信息等，有助于提高数据的价值和利用率。</p></li>
-</ol>
-<p>在数据处理中，需要使用各种工具和技术，例如数据库、ETL工具、Python编程等。数据处理的质量和准确性对后续的数据分析和应用都有着重要的影响，是数据科学和人工智能的核心流程之一。</p>
+<h1>数据标注<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<section id="id2">
+<h2>定义<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>数据标注是对原始数据（如文本、图像、音频、视频等）添加标签或注释的过程。这些标签能够为机器学习模型（包括大语言模型）提供可理解的信息，帮助模型学习数据中的模式和特征，从而使模型能够进行准确的预测、分类或生成任务。
+例如，在图像识别领域，对于一张包含猫的照片，数据标注人员会在这张照片上标注“猫”这个标签。当机器学习模型训练时，它就可以通过大量带有“猫”标签的照片，学习猫的各种特征，如外形、颜色、纹理等，最终能够在遇到新的猫的图像时准确识别。</p>
+</section>
+<section id="id3">
+<h2>类型<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h3>分类标注<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>这是最常见的标注类型之一。它是将数据划分到不同的类别中。例如，在文本分类中，对于新闻文章，可以标注为“体育类”“财经类”“娱乐类”等。在图像分类中，对于交通标志的图像，可标注为“限速标志”“禁止通行标志”等。
+以电子邮件分类为例，数据标注员会把邮件根据内容标注为“工作邮件”“垃圾邮件”“私人邮件”等类别，这样，邮件分类模型就可以根据这些标注学习如何区分不同类型的邮件。</p>
+</section>
+<section id="id5">
+<h3>框定标注（目标检测）<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>主要用于图像和视频数据。标注人员需要在图像或视频帧中用矩形框（也可以是其他形状）等方式圈出目标物体，并标注物体的类别。比如在自动驾驶场景的图像数据中，标注员会框出汽车、行人、交通信号灯等物体，并分别标注它们的类别。
+例如，在安防监控视频数据标注中，当要检测可疑人员时，标注员会在视频帧中框出人物形象，并标注“可疑人员”或“正常人员”，同时标注其位置等信息，帮助安防监控系统中的目标检测模型学习识别可疑行为。</p>
+</section>
+<section id="id6">
+<h3>语义分割标注<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<p>这种标注比框定标注更精细，用于图像数据。它是将图像中的每个像素都分配一个类别标签，用于区分不同的物体或区域。比如在医学影像领域，对X光片或CT扫描图像进行语义分割标注，可以区分出骨骼、肌肉、器官等不同的组织部分。
+以遥感卫星图像为例，通过语义分割标注，可以将图像中的土地、水域、植被、建筑物等不同的地物类型用不同的颜色（代表不同的类别标签）标注出来，这样的标注数据可以帮助构建土地利用类型识别模型。</p>
+</section>
+<section id="id7">
+<h3>序列标注<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<p>适用于序列数据，如文本、音频等。在文本序列标注中，最典型的是命名实体识别（NER）。例如，对于句子“小明在北京大学读书”，标注员会将“小明”标注为“人名”，“北京大学”标注为“机构名”。
+在语音识别中的序列标注，可以标注语音中的音素、单词等序列元素，帮助语音识别模型学习语音和文本之间的转换关系。</p>
+</section>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -401,7 +435,7 @@
         },
         kernelOptions: {
             name: "python3",
-            path: "./handling/processing"
+            path: "./handling/annotating"
         },
         predefinedOutput: true
     }
@@ -419,20 +453,20 @@
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="../collecting/scraping/ai-generating.html"
+       href="../../index.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">AI生成爬虫代码</p>
+        <p class="prev-next-title">简介</p>
       </div>
     </a>
     <a class="right-next"
-       href="data-marking.html"
+       href="text_annotating/README.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">数据标注</p>
+        <p class="prev-next-title">文本标注</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -442,6 +476,29 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">定义</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">类型</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">分类标注</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">框定标注（目标检测）</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">语义分割标注</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">序列标注</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
